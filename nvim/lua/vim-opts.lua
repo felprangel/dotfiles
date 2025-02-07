@@ -11,3 +11,9 @@ vim.opt.mouse = 'a'
 
 -- Sincroniza o clipboard do OS com o do Vim
 vim.opt.clipboard = 'unnamedplus'
+
+-- Configs de indentação
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
