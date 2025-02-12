@@ -1,14 +1,40 @@
-# Claramente esse não é o arquivo de configuração completo, se trata apenas de pequenas configurações que personalizei
-# Futuramente, quando eu entender melhor o zsh, vou criar um arquivo personalizado pro meu uso e commito aqui
-autoload -Uz +X compinit && compinit
+# Configurações de histórico
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS
 
-alias cat="batcat"
-alias ls="eza --icons"
+# Habilitando cd sem cd
+setopt autocd
 
-## Autocomplete case insensitive
+# Vim keybindings
+bindkey -v
+export KEYTIMEOUT=1
+
+# Busca reversa com vim keybinding
+bindkey '^R' history-incremental-search-backward
+
+# Autocomplete
+autoload -Uz compinit
+compinit
+
+# Complete case insensitive
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 
+# Plugins
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Starship
+eval "$(starship init zsh)"
+
+# Alias
+alias cat="bat"
+alias ls="eza --icons"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
 if [ "$PWD" = "$HOME" ]; then
-  cd /home/felipe/Projetos
+  cd /home/$USER/Projetos
 fi
