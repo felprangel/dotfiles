@@ -1,6 +1,18 @@
 # Meus arquivos de configuração
 Repositório dedicado a guardar meus arquivos de configuração para uma eventual consulta no futuro, mas pode ser útil para outras pessoas também
 
+# Programas
+- Wofi (App launcher)
+- Waybar (Barra de tarefas)
+- Hyprshot (Screenshots)
+- Alacritty (Emulador de terminal)
+- Dolphin (File Manager (buscando um melhor))
+- Cliphist (Clipboard Manager)
+- Swaync (Notificações)
+- Hyprlock (Tela de bloqueio)
+- Hypridle (Bloquear o pc automaticamente)
+- Hyprpaper (Wallpaper Manager)
+
 # Screenshots
 ![screenshot-1](https://github.com/user-attachments/assets/083e4b4b-24b4-4b7f-aff7-a3e611a36156)
 ![screenshot-2](https://github.com/user-attachments/assets/b556482c-0c47-46de-bfa5-3f54c4f45236)
