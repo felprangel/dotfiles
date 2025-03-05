@@ -7,13 +7,6 @@ setopt HIST_IGNORE_DUPS
 # Habilitando cd sem cd
 setopt autocd
 
-# Vim keybindings
-bindkey -v
-export KEYTIMEOUT=1
-
-# Busca reversa com vim keybinding
-bindkey '^R' history-incremental-search-backward
-
 # Autocomplete
 autoload -Uz compinit
 compinit
